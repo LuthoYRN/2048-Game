@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048</title>
+    <link rel="Stylesheet" href="2048.css">
+</head>
+<body>
+    <div class="game">
+        <div class="header_2048">
+            <div class="game_title">2048</div>
+            <div class="top_right_section">
+                <div class="score">Score
+                    <div class="js_score score_value"></div>
+                </div>
+                <div class="score">Best
+                    <div class="js_best score_value"></div>
+                </div>
+            </div>
+        </div>
+        <div class="info_2048">
+            <div class="game_description">Join the titles, get <span class="title_2048">2048!</span>
+                <div class="js_how_to_play how_to_play">How to play</div>
+            </div>
+            <button class="js_new_game_button new_game_button">New Game</button>
+        </div>
+        <div class="grid_board">
+            <div class="js_div_game_status"></div> 
+            <div class="js_grid grid">  
+                <div class="js_grid_r0c0"></div>
+                <div class="js_grid_r0c1"></div>
+                <div class="js_grid_r0c2"></div>
+                <div class="js_grid_r0c3"></div>
+                <div class="js_grid_r1c0"></div>
+                <div class="js_grid_r1c1"></div>
+                <div class="js_grid_r1c2"></div>
+                <div class="js_grid_r1c3"></div>
+                <div class="js_grid_r2c0"></div>
+                <div class="js_grid_r2c1"></div>
+                <div class="js_grid_r2c2"></div>
+                <div class="js_grid_r2c3"></div>
+                <div class="js_grid_r3c0"></div>
+                <div class="js_grid_r3c1"></div>
+                <div class="js_grid_r3c2"></div>
+                <div class="js_grid_r3c3"></div>
+            </div>
+        </div>
+        <div class="js_instructions instructions_none">
+            <p class="how_to_play_instructions">How to play: Use your arrow keys to move the tiles. Tiles with the same number merge into one when they touch.</p>
+            <p>Add them up to reach <span style="font-weight: bold;">2048!</span></p>
+        </div>
+    </div>
+    <script src="2048.js"></script>
+</body>
+</html>

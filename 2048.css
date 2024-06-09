@@ -1,0 +1,157 @@
+body{
+    display: flex;
+    font-family: Arial;
+    justify-content: center;
+    background-color: black;
+    color: rgba(255, 125, 0, 1);
+ }
+
+.header_2048{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.top_right_section{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    column-gap: 20px;
+    flex-direction: row;
+}
+.score{
+    font-family: impact;
+    color: rgba(255, 125, 0, 1);
+    border-color: rgba(255, 125, 0, 1);;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    box-shadow: 0px 0px 2px 2px rgba(255, 125, 0, 1);;
+    text-align: center;
+}
+.score_value{
+    color: rgba(255, 125, 0, 1);;
+    font-family: Impact;
+    font-size: 18px;
+}
+.game_title{
+    font-weight: bold;
+    font-family: Impact;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-right: 100px;
+}
+.info_2048{
+    font-family: 'Segoe UI';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.new_game_button{
+    background-color: rgba(255, 125, 0, 1);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 15px;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    transition: opacity 0.2s,height 0.1s, width 0.1s;
+}
+.new_game_button:active{
+    height: 25px;
+    width: 95px;
+}
+.new_game_button:hover{
+    background-color: white;
+    color: black;
+    border-style: solid;
+    border-style: 1px;
+
+    border-color: rgba(255, 125, 0, 1);
+}
+.how_to_play{
+    text-decoration: underline;
+    cursor: pointer;
+    width: 90px;
+}
+.hide_instruction{
+    text-decoration: underline;
+    cursor: pointer;
+    width: 120px;
+}
+.title_2048{
+    font-weight: bolder;
+}
+.grid{
+    border-color: rgba(255, 125, 0, 1);
+    border-style: solid;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px rgba(255, 125, 0, 1),
+                0px 0px 20px 5px rgba(255, 175, 0, 0.8),
+                0px 0px 30px 15px rgba(255, 225, 0, 0.5);
+    font-family: Impact;
+    font-size: 50px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.grid_game_over{
+    opacity: 0.1;
+}
+.grid div{
+    display: flex;
+    border-color: black;
+    border-radius: 6px;
+    box-shadow: 0px 0px 3px 2px rgba(255, 125, 0, 1);
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+.grid_block_animation{
+    animation: double_up 300ms;
+}
+@keyframes double_up {
+    100%{
+        background-color:  rgba(255, 125, 0);
+        color: black;
+    }
+}
+.instructions_none{
+    display: none;
+}
+.instructions_block{
+    display: block;
+}
+.how_to_play_instructions{
+    margin-top: 40px;
+    width: 500px;
+}
+
+.grid_board{
+    margin-top: 40px;
+    position: relative;
+}
+.div_game_over{
+    position: absolute;
+    font-family: Impact;
+    font-size: 60px;
+    top: 140px;
+    left: 115px;
+}
+.div_game_won{
+    position: absolute;
+    color: rgba(33, 232, 49, 0.8);
+    font-family: Impact;
+    font-size: 60px;
+    top: 140px;
+    left: 115px;
+}
